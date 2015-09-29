@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "DINPro";
+  src: url("/assets/fonts/DINPro-Medium.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DINPro";
+  src: url("/assets/fonts/DINPro-Light.woff");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "DINPro";
+  src: url("/assets/fonts/DINPro-Black.woff");
+  font-weight: 700;
+}
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class*="pure-u"] {
+  /* Set your content font stack here: */
+  font-family: "DINPro", Helvetica, Arial, sans-serif;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  max-width: 65em;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+h1 {
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.bold {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+div.header {
+  margin: 3em 0;
+  text-align: center;
+}
+div.header div.logo {
+  display: inline-block;
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+div.hero {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+div.hero img {
+  width: 100%;
+}
+div.hero div.caption {
+  position: relative;
+}
+@media screen and (min-width: 48em) {
+  div.hero div.caption {
+    position: absolute;
+  }
+}
+div#index div.hero {
+  height: 50em;
+  background-image: url("https://placehold.it/960x500");
+}
+div#project-test div.hero .caption {
+  width: 100%;
+}
+@media screen and (min-width: 48em) {
+  div#project-test div.hero .caption {
+    width: 40%;
+    right: 0;
+    top: 0;
+    padding: 0 2em;
+  }
+}
+div.card {
+  margin: 2em 0;
+  color: black;
+}
+@media screen and (min-width: 48em) {
+  div.card.right {
+    margin-left: 1em;
+  }
+  div.card.left {
+    margin-right: 1em;
+  }
+}
+div.card img {
+  width: 100%;
+}
+div.footer {
+  position: relative;
+}
+div.footer::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0 -10em;
+  padding: 0 10em;
+  background-color: yellow;
+  z-index: -1;
+}
+div.footer .right,
+div.footer .left {
+  padding: 2em 0;
+}
+@media screen and (min-width: 48em) {
+  div.footer .right {
+    margin-left: 1em;
+  }
+  div.footer .left {
+    margin-right: 1em;
+  }
+}
